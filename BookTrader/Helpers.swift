@@ -7,13 +7,24 @@
 //
 
 import Foundation
-
+import UIKit
 
 struct TextFieldAttributes {
     
-    let placeholder = ""
-    let text = ""
-    let font
+    var placeholder = ""
+    var text = ""
+    var font = UIFont.DefaultFont
+    var fontColor = Color.DefaultTextFieldFontColor
+    var hideChars = false
+}
+
+extension UITextField {
     
-    
+    func setupWithAttributes( attribtues : TextFieldAttributes) {
+        self.font = attribtues.font
+        self.textColor = attribtues.fontColor
+        self.placeholder = attribtues.placeholder
+        self.text = attribtues.text
+        self.isSecureTextEntry = attribtues.hideChars
+    }
 }

@@ -17,6 +17,7 @@
 		2589AD471DB1E69E004482E7 /* DataCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589AD461DB1E69E004482E7 /* DataCommunicator.swift */; };
 		2589AD491DB1E870004482E7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589AD481DB1E870004482E7 /* Helpers.swift */; };
 		2589AD4C1DB1E8CA004482E7 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589AD4B1DB1E8CA004482E7 /* Globals.swift */; };
+		2589AD4E1DB1EAC5004482E7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589AD4D1DB1EAC5004482E7 /* Colors.swift */; };
 		78664966E095CA390A29E194 /* Pods_BookTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC366FD7011EB8333172978E /* Pods_BookTrader.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		2589AD461DB1E69E004482E7 /* DataCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCommunicator.swift; sourceTree = "<group>"; };
 		2589AD481DB1E870004482E7 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		2589AD4B1DB1E8CA004482E7 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		2589AD4D1DB1EAC5004482E7 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		3DE5C2A4EE8C310C3064D0A9 /* Pods-BookTrader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookTrader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookTrader/Pods-BookTrader.debug.xcconfig"; sourceTree = "<group>"; };
 		9FFCEDA4AC43A9E0499128E2 /* Pods-BookTrader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookTrader.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookTrader/Pods-BookTrader.release.xcconfig"; sourceTree = "<group>"; };
 		DC366FD7011EB8333172978E /* Pods_BookTrader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookTrader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +146,7 @@
 			children = (
 				2589AD481DB1E870004482E7 /* Helpers.swift */,
 				2589AD4B1DB1E8CA004482E7 /* Globals.swift */,
+				2589AD4D1DB1EAC5004482E7 /* Colors.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				2589AD471DB1E69E004482E7 /* DataCommunicator.swift in Sources */,
 				2589AD1F1DB1CA9D004482E7 /* AppDelegate.swift in Sources */,
 				2589AD4C1DB1E8CA004482E7 /* Globals.swift in Sources */,
+				2589AD4E1DB1EAC5004482E7 /* Colors.swift in Sources */,
 				2589AD3F1DB1CC6E004482E7 /* LandingPageViewController.swift in Sources */,
 				2589AD491DB1E870004482E7 /* Helpers.swift in Sources */,
 				2589AD421DB1DC98004482E7 /* HomePageViewController.swift in Sources */,

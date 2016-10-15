@@ -32,6 +32,17 @@ class LandingPageViewController: UIViewController {
     //  Setup Methods
     private func setup() {
         
+        //  Username TextField
+        var username_textfield_attr = TextFieldAttributes()
+        
+        UsernameTextField.setupWithAttributes(attribtues: username_textfield_attr)
+        
+        //  Password Textfield
+        var password_textfield_attr = TextFieldAttributes()
+        password_textfield_attr.hideChars = true
+        
+        PasswordTextField.setupWithAttributes(attribtues: password_textfield_attr)
+        
         
         
         

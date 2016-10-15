@@ -23,13 +23,24 @@ class Globals {
 
 extension UIFont {
     
-    static func DefaultTextFieldFont() -> UIFont {
-        if let fnt = UIFont(name: Globals.default_font_family, size: Globals.default_font_size) {
-            return fnt
+    class var DefaultTextFieldFont : UIFont {
+        get {
+            if let fnt = UIFont(name: Globals.default_font_family, size: Globals.default_font_size) {
+                return fnt
+            }
+            
+            return UIFont()
         }
-        
-        return UIFont()
     }
     
-    
+    class var DefaultFont : UIFont {
+        get {
+            if let fnt = UIFont(name: Globals.default_font_family, size: Globals.default_font_size) {
+                return fnt
+            }
+            
+            return UIFont()
+        }
+    }
 }
+
