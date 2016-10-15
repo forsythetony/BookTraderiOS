@@ -13,6 +13,7 @@
 		2589AD291DB1CA9D004482E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2589AD271DB1CA9D004482E7 /* LaunchScreen.storyboard */; };
 		2589AD341DB1CA9D004482E7 /* BookTraderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589AD331DB1CA9D004482E7 /* BookTraderUITests.swift */; };
 		2589AD3F1DB1CC6E004482E7 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589AD3E1DB1CC6E004482E7 /* LandingPageViewController.swift */; };
+		2589AD421DB1DC98004482E7 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589AD411DB1DC98004482E7 /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		2589AD331DB1CA9D004482E7 /* BookTraderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTraderUITests.swift; sourceTree = "<group>"; };
 		2589AD351DB1CA9D004482E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2589AD3E1DB1CC6E004482E7 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		2589AD411DB1DC98004482E7 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				2589AD3E1DB1CC6E004482E7 /* LandingPageViewController.swift */,
+				2589AD411DB1DC98004482E7 /* HomePageViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			files = (
 				2589AD1F1DB1CA9D004482E7 /* AppDelegate.swift in Sources */,
 				2589AD3F1DB1CC6E004482E7 /* LandingPageViewController.swift in Sources */,
+				2589AD421DB1DC98004482E7 /* HomePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
