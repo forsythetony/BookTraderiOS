@@ -24,6 +24,17 @@
 		259AD1E11DB21BFD003826FB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259AD1E01DB21BFD003826FB /* CoreLocation.framework */; };
 		259AD1E41DB2247D003826FB /* MapTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AD1E31DB2247D003826FB /* MapTitleView.swift */; };
 		259AD1E61DB22CB3003826FB /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AD1E51DB22CB3003826FB /* DateManager.swift */; };
+		259AD2051DB24F31003826FB /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 259AD1FF1DB24F31003826FB /* libzbar.a */; };
+		259AD2061DB24F31003826FB /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AD2011DB24F31003826FB /* zbar-back.png */; };
+		259AD2071DB24F31003826FB /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 259AD2021DB24F31003826FB /* zbar-help.html */; };
+		259AD2081DB24F31003826FB /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AD2031DB24F31003826FB /* zbar-helpicons.png */; };
+		259AD2091DB24F31003826FB /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AD2041DB24F31003826FB /* zbar-samples.png */; };
+		259AD20C1DB250C7003826FB /* ImageCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AD20B1DB250C7003826FB /* ImageCaptureViewController.swift */; };
+		259AD20E1DB254FE003826FB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259AD20D1DB254FE003826FB /* AVFoundation.framework */; };
+		259AD2101DB2551D003826FB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259AD20F1DB2551D003826FB /* CoreMedia.framework */; };
+		259AD2121DB255C6003826FB /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 259AD2111DB255C6003826FB /* libiconv.2.dylib */; };
+		259AD2141DB25614003826FB /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259AD2131DB25614003826FB /* CoreVideo.framework */; };
+		259AD2161DB2561F003826FB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259AD2151DB2561F003826FB /* QuartzCore.framework */; };
 		259DC3BD1DB1F8E6005F36A2 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259DC3BC1DB1F8E6005F36A2 /* RegisterPageViewController.swift */; };
 		25BAC54C1DB1F2EA00801FBD /* SpecialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BAC54B1DB1F2EA00801FBD /* SpecialTextField.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +71,37 @@
 		259AD1E01DB21BFD003826FB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		259AD1E31DB2247D003826FB /* MapTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTitleView.swift; sourceTree = "<group>"; };
 		259AD1E51DB22CB3003826FB /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		259AD1EB1DB24F31003826FB /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		259AD1EC1DB24F31003826FB /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		259AD1ED1DB24F31003826FB /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		259AD1EE1DB24F31003826FB /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		259AD1EF1DB24F31003826FB /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		259AD1F01DB24F31003826FB /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		259AD1F11DB24F31003826FB /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		259AD1F21DB24F31003826FB /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		259AD1F31DB24F31003826FB /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		259AD1F41DB24F31003826FB /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		259AD1F51DB24F31003826FB /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		259AD1F61DB24F31003826FB /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		259AD1F71DB24F31003826FB /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		259AD1F81DB24F31003826FB /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		259AD1F91DB24F31003826FB /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		259AD1FA1DB24F31003826FB /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		259AD1FB1DB24F31003826FB /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		259AD1FC1DB24F31003826FB /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		259AD1FD1DB24F31003826FB /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		259AD1FE1DB24F31003826FB /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		259AD1FF1DB24F31003826FB /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		259AD2011DB24F31003826FB /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		259AD2021DB24F31003826FB /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		259AD2031DB24F31003826FB /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		259AD2041DB24F31003826FB /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		259AD20B1DB250C7003826FB /* ImageCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCaptureViewController.swift; sourceTree = "<group>"; };
+		259AD20D1DB254FE003826FB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		259AD20F1DB2551D003826FB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		259AD2111DB255C6003826FB /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = ../../../../../../../usr/lib/libiconv.2.dylib; sourceTree = "<group>"; };
+		259AD2131DB25614003826FB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		259AD2151DB2561F003826FB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		259DC3BC1DB1F8E6005F36A2 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		25BAC54B1DB1F2EA00801FBD /* SpecialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,8 +111,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259AD2161DB2561F003826FB /* QuartzCore.framework in Frameworks */,
+				259AD2141DB25614003826FB /* CoreVideo.framework in Frameworks */,
+				259AD2121DB255C6003826FB /* libiconv.2.dylib in Frameworks */,
+				259AD2101DB2551D003826FB /* CoreMedia.framework in Frameworks */,
+				259AD20E1DB254FE003826FB /* AVFoundation.framework in Frameworks */,
 				259AD1E11DB21BFD003826FB /* CoreLocation.framework in Frameworks */,
 				259AD1DD1DB217DC003826FB /* MapKit.framework in Frameworks */,
+				259AD2051DB24F31003826FB /* libzbar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +154,7 @@
 		2589AD1D1DB1CA9D004482E7 /* BookTrader */ = {
 			isa = PBXGroup;
 			children = (
+				259AD1E71DB24F31003826FB /* ZBarSDK */,
 				259AD1E21DB22469003826FB /* Subclassed Views */,
 				259AD1D91DB211DF003826FB /* Data Objects */,
 				2589AD4A1DB1E8BF004482E7 /* Helpers */,
@@ -116,6 +165,7 @@
 				2589AD251DB1CA9D004482E7 /* Assets.xcassets */,
 				2589AD271DB1CA9D004482E7 /* LaunchScreen.storyboard */,
 				2589AD2A1DB1CA9D004482E7 /* Info.plist */,
+				259AD20B1DB250C7003826FB /* ImageCaptureViewController.swift */,
 			);
 			path = BookTrader;
 			sourceTree = "<group>";
@@ -176,9 +226,78 @@
 			name = "Subclassed Views";
 			sourceTree = "<group>";
 		};
+		259AD1E71DB24F31003826FB /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				259AD1E81DB24F31003826FB /* Headers */,
+				259AD1FF1DB24F31003826FB /* libzbar.a */,
+				259AD2001DB24F31003826FB /* Resources */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		259AD1E81DB24F31003826FB /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				259AD1E91DB24F31003826FB /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		259AD1E91DB24F31003826FB /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				259AD1EA1DB24F31003826FB /* zbar */,
+				259AD1F41DB24F31003826FB /* zbar.h */,
+				259AD1F51DB24F31003826FB /* ZBarCameraSimulator.h */,
+				259AD1F61DB24F31003826FB /* ZBarCaptureReader.h */,
+				259AD1F71DB24F31003826FB /* ZBarHelpController.h */,
+				259AD1F81DB24F31003826FB /* ZBarImage.h */,
+				259AD1F91DB24F31003826FB /* ZBarImageScanner.h */,
+				259AD1FA1DB24F31003826FB /* ZBarReaderController.h */,
+				259AD1FB1DB24F31003826FB /* ZBarReaderView.h */,
+				259AD1FC1DB24F31003826FB /* ZBarReaderViewController.h */,
+				259AD1FD1DB24F31003826FB /* ZBarSDK.h */,
+				259AD1FE1DB24F31003826FB /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		259AD1EA1DB24F31003826FB /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				259AD1EB1DB24F31003826FB /* Decoder.h */,
+				259AD1EC1DB24F31003826FB /* Exception.h */,
+				259AD1ED1DB24F31003826FB /* Image.h */,
+				259AD1EE1DB24F31003826FB /* ImageScanner.h */,
+				259AD1EF1DB24F31003826FB /* Processor.h */,
+				259AD1F01DB24F31003826FB /* Scanner.h */,
+				259AD1F11DB24F31003826FB /* Symbol.h */,
+				259AD1F21DB24F31003826FB /* Video.h */,
+				259AD1F31DB24F31003826FB /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		259AD2001DB24F31003826FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				259AD2011DB24F31003826FB /* zbar-back.png */,
+				259AD2021DB24F31003826FB /* zbar-help.html */,
+				259AD2031DB24F31003826FB /* zbar-helpicons.png */,
+				259AD2041DB24F31003826FB /* zbar-samples.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		76BEBD53FF2FBE62E9F6DD95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				259AD2151DB2561F003826FB /* QuartzCore.framework */,
+				259AD2131DB25614003826FB /* CoreVideo.framework */,
+				259AD2111DB255C6003826FB /* libiconv.2.dylib */,
+				259AD20F1DB2551D003826FB /* CoreMedia.framework */,
+				259AD20D1DB254FE003826FB /* AVFoundation.framework */,
 				259AD1E01DB21BFD003826FB /* CoreLocation.framework */,
 				259AD1DC1DB217DC003826FB /* MapKit.framework */,
 			);
@@ -272,6 +391,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2589AD291DB1CA9D004482E7 /* LaunchScreen.storyboard in Resources */,
+				259AD2071DB24F31003826FB /* zbar-help.html in Resources */,
+				259AD2091DB24F31003826FB /* zbar-samples.png in Resources */,
+				259AD2081DB24F31003826FB /* zbar-helpicons.png in Resources */,
+				259AD2061DB24F31003826FB /* zbar-back.png in Resources */,
 				2589AD261DB1CA9D004482E7 /* Assets.xcassets in Resources */,
 				2589AD241DB1CA9D004482E7 /* Main.storyboard in Resources */,
 			);
@@ -295,6 +418,7 @@
 				2589AD471DB1E69E004482E7 /* DataCommunicator.swift in Sources */,
 				2589AD1F1DB1CA9D004482E7 /* AppDelegate.swift in Sources */,
 				2589AD4C1DB1E8CA004482E7 /* Globals.swift in Sources */,
+				259AD20C1DB250C7003826FB /* ImageCaptureViewController.swift in Sources */,
 				259AD1DF1DB217EE003826FB /* LocationManager.swift in Sources */,
 				25BAC54C1DB1F2EA00801FBD /* SpecialTextField.swift in Sources */,
 				2589AD4E1DB1EAC5004482E7 /* Colors.swift in Sources */,
@@ -369,6 +493,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -388,6 +513,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-lz",
+					"-lc++",
+					"-liconv",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -418,6 +549,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -430,6 +562,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-lz",
+					"-lc++",
+					"-liconv",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -441,10 +579,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CB6W4HNRCM;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BookTrader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BookTrader/ZBarSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tony.BookTrader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BookTrader-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -454,10 +598,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CB6W4HNRCM;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BookTrader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BookTrader/ZBarSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tony.BookTrader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BookTrader-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
