@@ -13,6 +13,11 @@ import UIKit
 
 class LandingPageViewController: UIViewController {
 
+    
+    @IBOutlet weak var UsernameTextField: UITextField!
+    @IBOutlet weak var PasswordTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,15 +29,17 @@ class LandingPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //  Setup Methods
+    private func setup() {
+        
+        
+        
+        
+        
+        
     }
-    */
-
+    @IBAction func didTapRegister(_ sender: AnyObject) {
+    }
+    @IBAction func didTapLogin(_ sender: AnyObject) {
+    }
 }

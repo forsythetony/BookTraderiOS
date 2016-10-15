@@ -4,7 +4,6 @@
 use_frameworks!
 
 target 'BookTrader' do
-	pod 'Firebase/Core'
 end
 
 target 'BookTraderUITests' do
