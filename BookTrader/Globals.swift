@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import MapKit
 
 class Globals {
     
@@ -22,11 +23,13 @@ class Globals {
 }
 
 struct Defaults {
-    
     static let TextFieldTitleLabelFontSize : CGFloat = 6.0
     static let TextFieldFontSize : CGFloat = 15.0
     static let FontFamilyItalics : String = "Helvetica-LightOblique"
-    
+    static let SchoolCoordinates : CLLocationCoordinate2D = {
+        let c = CLLocationCoordinate2D(latitude: 38.9428008, longitude: -92.3273835)
+        return c
+    }()
 }
 
 enum FontType : String {
@@ -34,6 +37,12 @@ enum FontType : String {
     case Bold       = "Helvetica-Bold"
     case Light      = "Helvetica-Light"
     case Italics    = "Helvetica-LightOblique"
+}
+
+struct Segues {
+    
+    static let LandingToRegister = "show_register_page"
+    static let LandingToHome = "landing_to_home_page"
 }
 extension UIFont {
     
@@ -92,6 +101,21 @@ extension UIFont {
         }
         
         return UIFont()
+    }
+}
+
+
+extension MKCoordinateRegion {
+    
+    static func DefaultRegionWithCenter( coordinates : CLLocationCoordinate2D ) -> MKCoordinateRegion {
+        
+        var region = MKCoordinateRegion()
+        let degreesSpan : CLLocationDegrees = 0.0099
+        
+        region.center   = coordinates
+        region.span     = MKCoordinateSpan(latitudeDelta: degreesSpan, longitudeDelta: degreesSpan)
+        
+        return region
     }
 }
 

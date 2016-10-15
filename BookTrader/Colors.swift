@@ -22,5 +22,47 @@ extension Color {
             return Color.gray
         }
     }
+
     
+    
+    //  MARK: Application Colors
+    class var BookLightOrange : Color {
+        get {
+            let hex = "F38630"
+            
+            return Color.init(hex: hex)
+        }
+    }
+    
+    class var BookDarkOrange : Color {
+        get {
+            let hex = "FA6900"
+            
+            return Color.init(hex: hex)
+        }
+    }
+    
+    class var BookGreenGray : Color {
+        get {
+            let hex = "E0E4CC"
+            
+            return Color.init(hex: hex)
+        }
+    }
+    
+    class var BookLightBlue : Color {
+        get {
+            let hex = "A7DBDB"
+            
+            return Color.init(hex: hex)
+        }
+    }
+    
+    class var BookBlue : Color {
+        get {
+            let hex = "69D2E7"
+            
+            return Color.init(hex: hex)
+        }
+    }
 }

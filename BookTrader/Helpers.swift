@@ -9,6 +9,58 @@
 import Foundation
 import UIKit
 
+class JSONBucket {
+    
+    var json_arr_data = [String : Any]()
+    private let dateMan = DateManager.sharedInstance
+    
+    
+    
+    func addString( k : String , v : String? ) {
+        
+        if let v = v {
+            json_arr_data[k] = v
+        } else {
+            json_arr_data[k] = v
+        }
+    }
+    
+    func addDate( k : String, v : Date?, type : DateType) {
+        if let v = v {
+            json_arr_data[k] = dateMan.convertDateToString(type: type, date: v)
+        } else {
+            json_arr_data[k] = ""
+        }
+    }
+    
+    func addInt( k : String, v : Int? ) {
+        if let v = v {
+            json_arr_data[k] = v
+        } else {
+            json_arr_data[k] = 0
+        }
+    }
+    
+    func addFloat( k : String, v : Float? ) {
+        
+        if let v = v {
+            json_arr_data[k] = v
+        } else {
+            json_arr_data[k] = Float(0)
+        }
+    }
+    
+    func convertToJSONData() -> Data?
+    {
+        do {
+            let d = try JSONSerialization.data(withJSONObject: json_arr_data, options: .init(rawValue: 0))
+            return d
+        } catch _ {
+            return nil
+        }
+    }
+    
+}
 struct TextFieldAttributes {
     
     var placeholder = ""
@@ -66,3 +118,4 @@ extension Date {
         }
     }
 }
+

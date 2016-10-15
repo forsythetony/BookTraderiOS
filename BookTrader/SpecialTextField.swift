@@ -10,9 +10,9 @@ import UIKit
 
 class SpecialTextField: UIView {
 
-    private var titleText       : String = "dddd"
-    private var placeHolderText : String = "ddd"
-    private var text            : String = "ddddddddd"
+    private var titleText       : String = ""
+    private var placeHolderText : String = ""
+    private var text            : String = ""
     
     private var handler : ((Void) -> Void)? = nil
     
@@ -169,6 +169,18 @@ class SpecialTextField: UIView {
         self.IsEditable = false
         self.mainTextField.isEnabled = false
         self.handler = actionHandler
+    }
+    
+}
+
+extension SpecialTextField {
+    
+    func isEmpty() -> Bool {
+        return Text == ""
+    }
+    
+    func textLength() -> Int {
+        return Text.characters.count
     }
     
 }

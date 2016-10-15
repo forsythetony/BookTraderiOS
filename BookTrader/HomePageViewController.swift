@@ -10,6 +10,8 @@ import UIKit
 
 class HomePageViewController: UIViewController {
 
+    @IBOutlet weak var TitleMapView: MapTitleView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

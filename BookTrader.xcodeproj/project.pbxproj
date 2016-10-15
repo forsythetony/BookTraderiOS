@@ -18,6 +18,12 @@
 		2589AD491DB1E870004482E7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589AD481DB1E870004482E7 /* Helpers.swift */; };
 		2589AD4C1DB1E8CA004482E7 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589AD4B1DB1E8CA004482E7 /* Globals.swift */; };
 		2589AD4E1DB1EAC5004482E7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589AD4D1DB1EAC5004482E7 /* Colors.swift */; };
+		259AD1DB1DB211F5003826FB /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AD1DA1DB211F5003826FB /* UserInfo.swift */; };
+		259AD1DD1DB217DC003826FB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259AD1DC1DB217DC003826FB /* MapKit.framework */; };
+		259AD1DF1DB217EE003826FB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AD1DE1DB217EE003826FB /* LocationManager.swift */; };
+		259AD1E11DB21BFD003826FB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259AD1E01DB21BFD003826FB /* CoreLocation.framework */; };
+		259AD1E41DB2247D003826FB /* MapTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AD1E31DB2247D003826FB /* MapTitleView.swift */; };
+		259AD1E61DB22CB3003826FB /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AD1E51DB22CB3003826FB /* DateManager.swift */; };
 		259DC3BD1DB1F8E6005F36A2 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259DC3BC1DB1F8E6005F36A2 /* RegisterPageViewController.swift */; };
 		25BAC54C1DB1F2EA00801FBD /* SpecialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BAC54B1DB1F2EA00801FBD /* SpecialTextField.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +54,12 @@
 		2589AD481DB1E870004482E7 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		2589AD4B1DB1E8CA004482E7 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		2589AD4D1DB1EAC5004482E7 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		259AD1DA1DB211F5003826FB /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		259AD1DC1DB217DC003826FB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		259AD1DE1DB217EE003826FB /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		259AD1E01DB21BFD003826FB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		259AD1E31DB2247D003826FB /* MapTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTitleView.swift; sourceTree = "<group>"; };
+		259AD1E51DB22CB3003826FB /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		259DC3BC1DB1F8E6005F36A2 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		25BAC54B1DB1F2EA00801FBD /* SpecialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259AD1E11DB21BFD003826FB /* CoreLocation.framework in Frameworks */,
+				259AD1DD1DB217DC003826FB /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +106,8 @@
 		2589AD1D1DB1CA9D004482E7 /* BookTrader */ = {
 			isa = PBXGroup;
 			children = (
+				259AD1E21DB22469003826FB /* Subclassed Views */,
+				259AD1D91DB211DF003826FB /* Data Objects */,
 				2589AD4A1DB1E8BF004482E7 /* Helpers */,
 				2589AD451DB1E689004482E7 /* Singletons */,
 				2589AD401DB1CC74004482E7 /* View Controllers */,
@@ -100,7 +116,6 @@
 				2589AD251DB1CA9D004482E7 /* Assets.xcassets */,
 				2589AD271DB1CA9D004482E7 /* LaunchScreen.storyboard */,
 				2589AD2A1DB1CA9D004482E7 /* Info.plist */,
-				25BAC54B1DB1F2EA00801FBD /* SpecialTextField.swift */,
 			);
 			path = BookTrader;
 			sourceTree = "<group>";
@@ -128,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				2589AD461DB1E69E004482E7 /* DataCommunicator.swift */,
+				259AD1DE1DB217EE003826FB /* LocationManager.swift */,
+				259AD1E51DB22CB3003826FB /* DateManager.swift */,
 			);
 			name = Singletons;
 			sourceTree = "<group>";
@@ -142,9 +159,28 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		259AD1D91DB211DF003826FB /* Data Objects */ = {
+			isa = PBXGroup;
+			children = (
+				259AD1DA1DB211F5003826FB /* UserInfo.swift */,
+			);
+			name = "Data Objects";
+			sourceTree = "<group>";
+		};
+		259AD1E21DB22469003826FB /* Subclassed Views */ = {
+			isa = PBXGroup;
+			children = (
+				25BAC54B1DB1F2EA00801FBD /* SpecialTextField.swift */,
+				259AD1E31DB2247D003826FB /* MapTitleView.swift */,
+			);
+			name = "Subclassed Views";
+			sourceTree = "<group>";
+		};
 		76BEBD53FF2FBE62E9F6DD95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				259AD1E01DB21BFD003826FB /* CoreLocation.framework */,
+				259AD1DC1DB217DC003826FB /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -199,6 +235,7 @@
 				TargetAttributes = {
 					2589AD1A1DB1CA9C004482E7 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = CB6W4HNRCM;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -254,14 +291,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259AD1E41DB2247D003826FB /* MapTitleView.swift in Sources */,
 				2589AD471DB1E69E004482E7 /* DataCommunicator.swift in Sources */,
 				2589AD1F1DB1CA9D004482E7 /* AppDelegate.swift in Sources */,
 				2589AD4C1DB1E8CA004482E7 /* Globals.swift in Sources */,
+				259AD1DF1DB217EE003826FB /* LocationManager.swift in Sources */,
 				25BAC54C1DB1F2EA00801FBD /* SpecialTextField.swift in Sources */,
 				2589AD4E1DB1EAC5004482E7 /* Colors.swift in Sources */,
 				259DC3BD1DB1F8E6005F36A2 /* RegisterPageViewController.swift in Sources */,
 				2589AD3F1DB1CC6E004482E7 /* LandingPageViewController.swift in Sources */,
 				2589AD491DB1E870004482E7 /* Helpers.swift in Sources */,
+				259AD1E61DB22CB3003826FB /* DateManager.swift in Sources */,
+				259AD1DB1DB211F5003826FB /* UserInfo.swift in Sources */,
 				2589AD421DB1DC98004482E7 /* HomePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CB6W4HNRCM;
 				INFOPLIST_FILE = BookTrader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tony.BookTrader;
@@ -411,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CB6W4HNRCM;
 				INFOPLIST_FILE = BookTrader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tony.BookTrader;

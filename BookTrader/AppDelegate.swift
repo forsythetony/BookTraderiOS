@@ -15,7 +15,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
+        
+        let locationMan = LocationManager.sharedInstance
+        
+        
+        let dataCom = DataCommunicator.sharedInstance
+        
+        var userInfo = UserInfo()
+        
+        userInfo.birthDate = Date.DefaultBirthDate
+        userInfo.dateJoined = Date()
+        userInfo.firstName = "Anthony"
+        userInfo.lastName = "Forsythe"
+        userInfo.email = "forsythetony@gmail.com"
+        userInfo.password = "password"
+        
+        
+        dataCom.registerUserWithInformation(info: userInfo) { (_, _) in
+            print("hi")
+        }
         return true
     }
 
