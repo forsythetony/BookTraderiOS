@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M5G-Bj-QTv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wfb-s3-0SM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -81,6 +82,136 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KfC-Ag-vIr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="904.79999999999995" y="135.38230884557723"/>
+        </scene>
+        <!--Register Page View Controller-->
+        <scene sceneID="7Ua-Ti-lBl">
+            <objects>
+                <viewController id="wfb-s3-0SM" customClass="RegisterPageViewController" customModule="BookTrader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KzV-l2-QGq"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZEM-PR-nC3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hQR-Ah-Ilu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView verifyAmbiguity="off" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0iA-ZQ-wf5">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzu-a3-WDI">
+                                        <rect key="frame" x="139" y="27" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewW-PC-vrv" customClass="SpecialTextField" customModule="BookTrader" customModuleProvider="target">
+                                        <rect key="frame" x="52" y="93" width="239" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NOS-y5-RYT" customClass="SpecialTextField" customModule="BookTrader" customModuleProvider="target">
+                                        <rect key="frame" x="52" y="155" width="239" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Qg-dk-zGW" customClass="SpecialTextField" customModule="BookTrader" customModuleProvider="target">
+                                        <rect key="frame" x="52" y="211" width="239" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ucy-Fl-hvW" customClass="SpecialTextField" customModule="BookTrader" customModuleProvider="target">
+                                        <rect key="frame" x="52" y="260" width="239" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LGE-Ko-ywx" customClass="SpecialTextField" customModule="BookTrader" customModuleProvider="target">
+                                        <rect key="frame" x="52" y="555" width="239" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eec-mm-AsU" customClass="SpecialTextField" customModule="BookTrader" customModuleProvider="target">
+                                        <rect key="frame" x="52" y="604" width="239" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="mzd-eO-nua">
+                                        <rect key="frame" x="-3" y="355" width="349" height="181"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="349" id="9rZ-Id-0ra"/>
+                                            <constraint firstAttribute="height" constant="181" id="yEg-dQ-uGg"/>
+                                        </constraints>
+                                        <date key="date" timeIntervalSinceReferenceDate="498206615.65409499">
+                                            <!--2016-10-15 06:43:35 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2k3-Jd-gBy" customClass="SpecialTextField" customModule="BookTrader" customModuleProvider="target">
+                                        <rect key="frame" x="52" y="653" width="239" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmG-25-sHu">
+                                        <rect key="frame" x="72" y="728" width="73" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="didTapCancelButton:" destination="wfb-s3-0SM" eventType="touchUpInside" id="lhv-en-fMh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LG-Pd-7zL">
+                                        <rect key="frame" x="197" y="728" width="73" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Submit"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Birth Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qek-Ov-oP3">
+                                        <rect key="frame" x="8" y="314" width="77" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mzd-eO-nua" firstAttribute="top" secondItem="0iA-ZQ-wf5" secondAttribute="top" constant="322" id="8Rg-2I-H78"/>
+                                    <constraint firstItem="mzd-eO-nua" firstAttribute="leading" secondItem="0iA-ZQ-wf5" secondAttribute="leading" constant="-6" id="bhC-0c-xAf"/>
+                                    <constraint firstAttribute="trailing" secondItem="mzd-eO-nua" secondAttribute="trailing" id="d1t-TW-hvA"/>
+                                    <constraint firstAttribute="bottom" secondItem="mzd-eO-nua" secondAttribute="bottom" constant="277" id="saS-Jx-y4d"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="rect" keyPath="frame">
+                                        <rect key="value" x="0.0" y="0.0" width="320" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="320" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="0iA-ZQ-wf5" secondAttribute="trailing" id="0Go-NF-Eyp"/>
+                            <constraint firstItem="0iA-ZQ-wf5" firstAttribute="top" secondItem="KzV-l2-QGq" secondAttribute="bottom" id="4oY-Tq-mIC"/>
+                            <constraint firstItem="0iA-ZQ-wf5" firstAttribute="leading" secondItem="hQR-Ah-Ilu" secondAttribute="leadingMargin" id="5Zh-f1-4hH"/>
+                            <constraint firstItem="ZEM-PR-nC3" firstAttribute="top" secondItem="0iA-ZQ-wf5" secondAttribute="bottom" id="oIa-7u-Xnu"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="800"/>
+                    <connections>
+                        <outlet property="BirthDatePicker" destination="mzd-eO-nua" id="Md2-Ok-7Yx"/>
+                        <outlet property="ChooseSchoolTextField" destination="ucy-Fl-hvW" id="ovD-tb-YPY"/>
+                        <outlet property="EmailTextField" destination="1Qg-dk-zGW" id="n4x-H3-shT"/>
+                        <outlet property="FirstNameTextField" destination="ewW-PC-vrv" id="IST-Sh-7Fg"/>
+                        <outlet property="LastNameTextField" destination="NOS-y5-RYT" id="Zea-Xa-6qn"/>
+                        <outlet property="PasswordConfirmTextField" destination="2k3-Jd-gBy" id="vwn-cb-SLa"/>
+                        <outlet property="PasswordTextField" destination="eec-mm-AsU" id="vOP-eh-6mf"/>
+                        <outlet property="UsernameTextField" destination="LGE-Ko-ywx" id="aE9-yy-Mel"/>
+                        <outlet property="didTapSubmitButton" destination="4LG-Pd-7zL" id="1a7-xN-xYN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3PX-WP-h7P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1716" y="1067.7661169415294"/>
         </scene>
     </scenes>
 </document>

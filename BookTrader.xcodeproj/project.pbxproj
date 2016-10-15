@@ -18,7 +18,8 @@
 		2589AD491DB1E870004482E7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589AD481DB1E870004482E7 /* Helpers.swift */; };
 		2589AD4C1DB1E8CA004482E7 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589AD4B1DB1E8CA004482E7 /* Globals.swift */; };
 		2589AD4E1DB1EAC5004482E7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589AD4D1DB1EAC5004482E7 /* Colors.swift */; };
-		78664966E095CA390A29E194 /* Pods_BookTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC366FD7011EB8333172978E /* Pods_BookTrader.framework */; };
+		259DC3BD1DB1F8E6005F36A2 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259DC3BC1DB1F8E6005F36A2 /* RegisterPageViewController.swift */; };
+		25BAC54C1DB1F2EA00801FBD /* SpecialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BAC54B1DB1F2EA00801FBD /* SpecialTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +48,8 @@
 		2589AD481DB1E870004482E7 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		2589AD4B1DB1E8CA004482E7 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		2589AD4D1DB1EAC5004482E7 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		3DE5C2A4EE8C310C3064D0A9 /* Pods-BookTrader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookTrader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookTrader/Pods-BookTrader.debug.xcconfig"; sourceTree = "<group>"; };
-		9FFCEDA4AC43A9E0499128E2 /* Pods-BookTrader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookTrader.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookTrader/Pods-BookTrader.release.xcconfig"; sourceTree = "<group>"; };
-		DC366FD7011EB8333172978E /* Pods_BookTrader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookTrader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		259DC3BC1DB1F8E6005F36A2 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		25BAC54B1DB1F2EA00801FBD /* SpecialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78664966E095CA390A29E194 /* Pods_BookTrader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,22 +70,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0974FFBC1C38504762A47038 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3DE5C2A4EE8C310C3064D0A9 /* Pods-BookTrader.debug.xcconfig */,
-				9FFCEDA4AC43A9E0499128E2 /* Pods-BookTrader.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		2589AD121DB1CA9C004482E7 = {
 			isa = PBXGroup;
 			children = (
 				2589AD1D1DB1CA9D004482E7 /* BookTrader */,
 				2589AD321DB1CA9D004482E7 /* BookTraderUITests */,
 				2589AD1C1DB1CA9D004482E7 /* Products */,
-				0974FFBC1C38504762A47038 /* Pods */,
 				76BEBD53FF2FBE62E9F6DD95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +100,7 @@
 				2589AD251DB1CA9D004482E7 /* Assets.xcassets */,
 				2589AD271DB1CA9D004482E7 /* LaunchScreen.storyboard */,
 				2589AD2A1DB1CA9D004482E7 /* Info.plist */,
+				25BAC54B1DB1F2EA00801FBD /* SpecialTextField.swift */,
 			);
 			path = BookTrader;
 			sourceTree = "<group>";
@@ -129,6 +119,7 @@
 			children = (
 				2589AD3E1DB1CC6E004482E7 /* LandingPageViewController.swift */,
 				2589AD411DB1DC98004482E7 /* HomePageViewController.swift */,
+				259DC3BC1DB1F8E6005F36A2 /* RegisterPageViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -154,7 +145,6 @@
 		76BEBD53FF2FBE62E9F6DD95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DC366FD7011EB8333172978E /* Pods_BookTrader.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,12 +156,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2589AD381DB1CA9D004482E7 /* Build configuration list for PBXNativeTarget "BookTrader" */;
 			buildPhases = (
-				0AD12DE0F00E0A39438DA5B9 /* Check Pods Manifest.lock */,
 				2589AD171DB1CA9C004482E7 /* Sources */,
 				2589AD181DB1CA9C004482E7 /* Frameworks */,
 				2589AD191DB1CA9C004482E7 /* Resources */,
-				673308C76260EBE5746B1D60 /* Embed Pods Frameworks */,
-				CCF37E17BFFCBFB3F1323DB1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,10 +199,12 @@
 				TargetAttributes = {
 					2589AD1A1DB1CA9C004482E7 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					2589AD2E1DB1CA9D004482E7 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2589AD1A1DB1CA9C004482E7;
 					};
@@ -260,54 +249,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		0AD12DE0F00E0A39438DA5B9 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		673308C76260EBE5746B1D60 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookTrader/Pods-BookTrader-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CCF37E17BFFCBFB3F1323DB1 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookTrader/Pods-BookTrader-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		2589AD171DB1CA9C004482E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -316,7 +257,9 @@
 				2589AD471DB1E69E004482E7 /* DataCommunicator.swift in Sources */,
 				2589AD1F1DB1CA9D004482E7 /* AppDelegate.swift in Sources */,
 				2589AD4C1DB1E8CA004482E7 /* Globals.swift in Sources */,
+				25BAC54C1DB1F2EA00801FBD /* SpecialTextField.swift in Sources */,
 				2589AD4E1DB1EAC5004482E7 /* Colors.swift in Sources */,
+				259DC3BD1DB1F8E6005F36A2 /* RegisterPageViewController.swift in Sources */,
 				2589AD3F1DB1CC6E004482E7 /* LandingPageViewController.swift in Sources */,
 				2589AD491DB1E870004482E7 /* Helpers.swift in Sources */,
 				2589AD421DB1DC98004482E7 /* HomePageViewController.swift in Sources */,
@@ -454,7 +397,6 @@
 		};
 		2589AD391DB1CA9D004482E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DE5C2A4EE8C310C3064D0A9 /* Pods-BookTrader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BookTrader/Info.plist;
@@ -467,7 +409,6 @@
 		};
 		2589AD3A1DB1CA9D004482E7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FFCEDA4AC43A9E0499128E2 /* Pods-BookTrader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BookTrader/Info.plist;
