@@ -141,6 +141,9 @@ class RegisterPageViewController: UIViewController {
         field.IsOptional = isOptional
         field.TitleLabelFontSize = textfield_title_label_font_size
         field.setTitleFont(font: titleLabelFont)
+        field.textColor = Color.white
+        
+        field.setAttributedPlaceholder(color: Color.white, fnt: UIFont.DefaultTextFieldFont, str: placeholder)
         
         if !isEditable {
             field.enableGestureRecognizer(actionHandler: actionHandler!)
@@ -204,8 +207,8 @@ class RegisterPageViewController: UIViewController {
         userInfo.email = EmailTextField.Text
         
     }
+    
     private func checkFields() -> InputError {
-        
         
         guard !FirstNameTextField.isEmpty() else { return .NotAllFieldsFilled }
         

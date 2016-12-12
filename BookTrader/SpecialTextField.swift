@@ -13,10 +13,22 @@ class SpecialTextField: UIView {
     private var titleText       : String = ""
     private var placeHolderText : String = ""
     private var text            : String = ""
+    var textColor       : Color = Color.white {
+        didSet {
+            self.mainTextField.textColor = textColor
+        }
+    }
     
+    func setAttributedPlaceholder( color : Color, fnt : UIFont, str : String ) {
+        
+        let attributes = [ NSForegroundColorAttributeName : color, NSFontAttributeName : fnt]
+        
+        mainTextField.attributedPlaceholder = NSAttributedString(string: str, attributes: attributes)
+    }
     private var handler : ((Void) -> Void)? = nil
     
     var IsEditable = true
+    
     
     var TitleLabelFontSize : CGFloat = 5.0 {
         didSet {
@@ -126,7 +138,7 @@ class SpecialTextField: UIView {
         
         
         mainTitleLabel.frame = title_rect
-        
+        mainTitleLabel.backgroundColor = Color.clear
         self.addSubview(mainTitleLabel)
         
         
@@ -138,25 +150,34 @@ class SpecialTextField: UIView {
         optional_rect.origin.x = self.frame.size.width.divideInHalf()
         
         optionalTextLabel.frame = optional_rect
-        
+        optionalTextLabel.backgroundColor = Color.clear
         self.addSubview(optionalTextLabel)
         
         //  Set up the main field label
         
         var text_rect = CGRect()
+        let text_x_offset : CGFloat = 0.0
         
-        text_rect.size.width = self.frame.size.width
+        text_rect.size.width = self.frame.size.width - text_x_offset
         text_rect.size.height = self.frame.size.height - title_rect.height
         text_rect.origin.y = title_rect.height
-        
+        text_rect.origin.x = text_x_offset
         mainTextField.frame = text_rect
+        
+        var mainTextBackground = Color.black
+        mainTextBackground = mainTextBackground.withAlphaComponent(0.5)
+        mainTextField.backgroundColor = mainTextBackground
+        mainTextField.layer.cornerRadius = 8.0
+        mainTextField.textColor = textColor
         
         self.addSubview(mainTextField)
         
         self.tapGestureRec.addTarget(self, action: #selector(self.didTapGestureRecognizer))
         self.addGestureRecognizer(self.tapGestureRec)
+        self.backgroundColor = Color.clear
         
     }
+    
     
     func didTapGestureRecognizer( sender : UITapGestureRecognizer) {
         
@@ -182,5 +203,9 @@ extension SpecialTextField {
     func textLength() -> Int {
         return Text.characters.count
     }
+}
+
+extension UITextField {
+    
     
 }

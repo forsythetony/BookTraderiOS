@@ -119,3 +119,103 @@ extension Date {
     }
 }
 
+
+
+struct CurrencyValue {
+    
+    var total : Float {
+        get {
+            return (Float(intTotal) / 10.0)
+        }
+    }
+    
+    private var intTotal : Int = 0
+    
+    mutating func addValue( val : Int ) {
+        intTotal *= 10
+        intTotal += val
+    }
+    
+    mutating func removeValue() {
+        intTotal /= 10
+    }
+    
+    func getCurrencyString() -> String {
+        
+        var currString = "$"
+        
+        var zeroCount = 0
+        let maxZeroes = 4
+        
+        var intString = String(intTotal)
+        let intCharCount = intString.characters.count
+        
+        zeroCount = maxZeroes - intCharCount
+        
+        if zeroCount < 0 { zeroCount = 0 }
+        
+        if zeroCount >= 1 {
+        for _ in 1...zeroCount {
+            currString.append("0")
+        }
+        }
+        for _ in 1...intCharCount {
+            currString.append(String(intString.characters.removeFirst()))
+        }
+        
+        currString = currString.insert(string: ".", ind: currString.characters.count - 2)
+        
+        return currString
+    }
+    
+    
+    
+    
+}
+
+extension String {
+    
+    func insert(string:String,ind:Int) -> String {
+        return  String(self.characters.prefix(ind)) + string + String(self.characters.suffix(self.characters.count-ind))
+    }
+    
+    mutating func cleanCurrencyString() {
+        var cleanString = self.removeOccurrences(of: "$")
+        cleanString = cleanString.removeOccurrences(of: ".")
+        self = cleanString
+    }
+    
+    mutating func pushCurrencyCharIn( char : Character ) {
+        
+        if char == "0" { return }
+        if char == "." { return }
+        
+        self.cleanCurrencyString()
+        self.removeLeadingZero()
+        self.insert(char, at: self.endIndex)
+    }
+    
+    mutating func recurrencifyString() {
+        
+    }
+    mutating func removeLeadingZero() {
+        
+        if let first_char = self.characters.first {
+            if first_char == "0" {
+                self.removeFirstCharacter()
+            }
+        }
+    }
+    
+    
+    mutating func removeFirstCharacter() {
+        
+        if self.characters.count > 0 {
+            self.remove(at: self.startIndex)
+        }
+        
+    }
+    func removeOccurrences(of str : String) -> String {
+        return self.replacingOccurrences(of: str, with: "")
+    }
+}

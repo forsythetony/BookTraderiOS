@@ -43,6 +43,8 @@ struct Segues {
     
     static let LandingToRegister = "show_register_page"
     static let LandingToHome = "landing_to_home_page"
+    static let HomeToAddListing = "add_listing_from_home"
+    
 }
 extension UIFont {
     
@@ -110,7 +112,7 @@ extension MKCoordinateRegion {
     static func DefaultRegionWithCenter( coordinates : CLLocationCoordinate2D ) -> MKCoordinateRegion {
         
         var region = MKCoordinateRegion()
-        let degreesSpan : CLLocationDegrees = 0.0099
+        let degreesSpan : CLLocationDegrees = 0.011
         
         region.center   = coordinates
         region.span     = MKCoordinateSpan(latitudeDelta: degreesSpan, longitudeDelta: degreesSpan)

@@ -11,11 +11,8 @@ import MapKit
 
 class MapTitleView: UIView {
 
-    var SchoolName : String = "Mizzou" {
-        didSet {
-            schoolNameLabel.text = SchoolName
-        }
-    }
+    var SchoolName : String = "Mizzou"
+    
     var SchoolCoordinates : CLLocationCoordinate2D = Defaults.SchoolCoordinates {
         didSet {
             backgroundMapView.setRegion(MKCoordinateRegion.DefaultRegionWithCenter(coordinates: SchoolCoordinates), animated: true)
@@ -28,7 +25,7 @@ class MapTitleView: UIView {
        
         let m = MKMapView()
         m.alpha = 0.95
-        m.mapType = .hybrid
+        m.mapType = .satelliteFlyover
         return m
     }()
     
@@ -50,6 +47,15 @@ class MapTitleView: UIView {
         backgroundMapView.setRegion(MKCoordinateRegion.DefaultRegionWithCenter(coordinates: SchoolCoordinates), animated: false)
         self.addSubview(self.backgroundMapView)
         
+        self.translatesAutoresizingMaskIntoConstraints = false
+        backgroundMapView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            backgroundMapView.topAnchor.constraint(equalTo: self.topAnchor),
+            backgroundMapView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            backgroundMapView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            backgroundMapView.trailingAnchor.constraint(equalTo: self.trailingAnchor)
+            ]);
         
         //  School Title
         
@@ -64,10 +70,20 @@ class MapTitleView: UIView {
         
         schoolNameLabel.font = UIFont.FontWithType(fontType: .Bold, size: 30.0)
         schoolNameLabel.text = SchoolName
-        schoolNameLabel.backgroundColor = Color.clear
+        schoolNameLabel.backgroundColor = Color.MizzouGold
         schoolNameLabel.textAlignment = .center
         
         self.addSubview(schoolNameLabel)
+        schoolNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            schoolNameLabel.widthAnchor.constraint(equalTo: self.widthAnchor),
+            schoolNameLabel.heightAnchor.constraint(equalToConstant: 40.0),
+            schoolNameLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            schoolNameLabel.topAnchor.constraint(equalTo: self.topAnchor)
+            ]);
+        
+        
     }
     
     

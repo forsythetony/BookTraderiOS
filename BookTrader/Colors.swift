@@ -65,4 +65,14 @@ extension Color {
             return Color.init(hex: hex)
         }
     }
+    
+    class var MizzouGold : Color {
+        get {
+            let hex = "F1B82D"
+            
+            let c =  Color.init(hex: hex)
+            
+            return c.withAlphaComponent(0.7)
+        }
+    }
 }

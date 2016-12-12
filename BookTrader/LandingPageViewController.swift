@@ -19,8 +19,9 @@ class LandingPageViewController: UIViewController, LocationManagerDelegate {
     @IBOutlet weak var UsernameTextField: SpecialTextField!
     
     
-    private let textfield_title_label_font_size : CGFloat = 6.0
+    private let textfield_title_label_font_size : CGFloat = 12.0
     
+    private let mockMan = MockDataManager.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,10 +47,10 @@ class LandingPageViewController: UIViewController, LocationManagerDelegate {
         self.title = "Login"
         
         //  Username TextField
-       setupTextField(field: UsernameTextField, title: "Username", placeholder: "Enter Username", text: "", isEditable: true, isOptional: false, isSecureText: false, actionHandler: nil)
+       setupTextField(field: UsernameTextField, title: "Username", placeholder: "Enter Username", text: mockMan.creds.username, isEditable: true, isOptional: false, isSecureText: false, actionHandler: nil)
         
         //  Password Textfield
-        setupTextField(field: PasswordTextField, title: "Password", placeholder: "Enter Password", text: "", isEditable: true, isOptional: false, isSecureText: true, actionHandler: nil)
+        setupTextField(field: PasswordTextField, title: "Password", placeholder: "Enter Password", text: mockMan.creds.password, isEditable: true, isOptional: false, isSecureText: true, actionHandler: nil)
 
     }
     
@@ -76,6 +77,7 @@ class LandingPageViewController: UIViewController, LocationManagerDelegate {
         switch segue_id {
         case Segues.LandingToRegister:
             let dest = segue.destination as? RegisterPageViewController
+            
             
             if let dest = dest {
                 if self.UsernameTextField.Text != "" {

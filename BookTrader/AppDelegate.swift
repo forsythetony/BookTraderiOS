@@ -19,21 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let locationMan = LocationManager.sharedInstance
         
         
-        let dataCom = DataCommunicator.sharedInstance
+        let mockMan = MockDataManager.sharedInstance
         
-        var userInfo = UserInfo()
+        mockMan.updateCredentialsFromStore()
         
-        userInfo.birthDate = Date.DefaultBirthDate
-        userInfo.dateJoined = Date()
-        userInfo.firstName = "Anthony"
-        userInfo.lastName = "Forsythe"
-        userInfo.email = "forsythetony@gmail.com"
-        userInfo.password = "password"
-        
-        
-        dataCom.registerUserWithInformation(info: userInfo) { (_, _) in
-            print("hi")
-        }
         return true
     }
 
